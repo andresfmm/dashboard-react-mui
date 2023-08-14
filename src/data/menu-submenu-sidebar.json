@@ -1,0 +1,19 @@
+[
+    {
+      "text": "Forms",
+      "icon": "DynamicForm",
+      "childrens": [
+          {
+            "text": "Login 1",
+            "icon": "Login",
+            "to":   "/login"
+          },
+          {
+            "text": "Login 2",
+            "icon": "Login",
+            "to":   "/login-2"
+          }
+      ]
+      
+    }
+ ]

@@ -1,0 +1,13 @@
+
+[
+   {
+     "text": "Table",
+     "icon": "BackupTable",
+     "to":   "/tables"
+   },
+   {
+    "text": "Cards",
+    "icon": "Inbox",
+    "to":   "/cards"
+  }
+]
