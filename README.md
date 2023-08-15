@@ -15,8 +15,8 @@ And then:
 
 #### User and password
 
-user: admin@hotmail.com
-pass: 123
+1. user: admin@hotmail.com
+2. pass: 123
 
 this version is working with router and redux  ptotected by token 
 
