@@ -4,6 +4,7 @@
   "private": true,
   "author": "Andres f meza",
   "license": "MIT",
+  "contact": "andres230687@hotmail.com",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
