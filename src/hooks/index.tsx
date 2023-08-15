@@ -1,4 +1,4 @@
 
 
 
-export * from './useCheckSpas';
+export * from './useCheckToken';

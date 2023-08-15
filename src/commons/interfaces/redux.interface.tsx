@@ -27,14 +27,4 @@ export interface IStatusLoading {
 }
 
 
-export interface IStorageAudios {
-    audio_id: string,
-    audio_name: string,
-    audio_src: string,
-    audio_image_src: string,
-    pivot: {
-        fk_spa_id: string,
-        fk_audio_id: string
-    }
-}
 

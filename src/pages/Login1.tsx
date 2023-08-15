@@ -3,26 +3,23 @@ import React, { useState } from 'react';
 
 
 // INSTALLED
-import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import { Container } from '@mui/material';
+import Card from '@mui/material/Card';
+import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-
-
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-
-
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 import { useDispatch } from 'react-redux';
+
 
 
 // CUSTOM
@@ -31,7 +28,7 @@ import { CopyRight } from '../components';
 import { startLoginWithEmailPassword } from '../store/auth';
 import { ILoginWithEmailPassword } from '../commons/interfaces';
 import { EmailValidator, PasswordValidator } from '../commons/utils/Validators';
-import { Checkbox, Container, FormControlLabel } from '@mui/material';
+
 
 
 
@@ -137,10 +134,10 @@ export const Login1 = () => {
               setPassword({ value: event.target.value, error: '' })
             }}
           />
-          {/* <FormControlLabel
+          <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
-          /> */}
+          />
           <Button
             type="submit"
             fullWidth

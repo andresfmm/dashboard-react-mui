@@ -1,5 +1,12 @@
-import React from 'react'
+// NATIVE
+
+// INSTALLED
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
+
+
+// CUSTOM
+
+
 
 export const ProtectedRoute = ({
     user,

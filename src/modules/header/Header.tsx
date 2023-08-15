@@ -1,36 +1,32 @@
+// NATIVE
 import React, { useEffect } from 'react';
-import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
+
+
+// INSTALLED
 import Box from '@mui/material/Box';
-import MuiDrawer from '@mui/material/Drawer';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
+import Menu from '@mui/material/Menu';
+import Avatar from '@mui/material/Avatar';
 import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import MuiDrawer from '@mui/material/Drawer';
+import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { MenuSidebar } from '../menu-sidebar/MenuSidebar';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
+
+
 import { useSelector, useDispatch } from 'react-redux';
+
+
+
+// CUSTOM
+import { startLogOut } from '../../store/auth';
 import { openDrawerAction } from '../../store/globals';
 
 
-import Avatar from '@mui/material/Avatar';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import { Button } from '@mui/material';
-import { startLogOut } from '../../store/auth';
+
 
 const drawerWidth = 240;
 

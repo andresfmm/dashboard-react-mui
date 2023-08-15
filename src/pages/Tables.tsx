@@ -1,4 +1,9 @@
+// NATIVE
 import * as React from 'react';
+
+
+
+// INSTALLED
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -21,6 +26,12 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
 import { Link } from '@mui/material';
+
+
+
+// CUSTOM
+
+
 
 interface Data {
   calories: number;

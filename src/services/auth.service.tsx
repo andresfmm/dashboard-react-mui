@@ -18,6 +18,6 @@ export const loginWithEmailPassword = async({ email, password }:ILoginWithEmailP
         return await http.post<any>('/users/login',{ email, password });
 
     } catch (error) {
-        console.log('tonkaaaaaaaaaaaaaaaaaa ',error)
+        console.log('loginWithEmailPassword ',error)
     }
 }

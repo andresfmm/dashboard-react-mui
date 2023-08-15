@@ -8,14 +8,13 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 
 // CUSTOM
-import { login, startLogOut } from '../store/auth';
+import { login } from '../store/auth';
 import { PublicRoutes } from './PublicRoutes';
 import { Preload } from '../components/Preload';
 import { PrivateRoutes } from './PrivateRoutes';
 import { ProtectedRoute } from './ProtectedRoute';
 import { IAuth, ILoading } from '../commons/interfaces';
 import { useCheckToken } from '../hooks/useCheckToken';
-import { useCheckSpas } from '../hooks';
 
 
 
@@ -32,7 +31,6 @@ export const Navigator = () => {
 
   const [isLogged,   setIsLogged] = useState<any>(undefined)
   const [ initCheckToken ] = useCheckToken();
-  const [ initCheckSpa ]   = useCheckSpas();
 
   useEffect(() => {
     checkToken();

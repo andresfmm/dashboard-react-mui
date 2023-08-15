@@ -2,16 +2,13 @@
 import React, { useState, useEffect} from 'react';
 
 // INSTALLED
-import { styled, useTheme, Theme, CSSObject } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import { styled, Theme, CSSObject } from '@mui/material/styles';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
@@ -19,38 +16,25 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { Avatar, ListSubheader, Menu, MenuItem, Tooltip } from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
-import AdbIcon from '@mui/icons-material/Adb';
-
 import Collapse from '@mui/material/Collapse';
-import DraftsIcon from '@mui/icons-material/Drafts';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import StarBorder from '@mui/icons-material/StarBorder';
 
-import Container from '@mui/material/Container';
 
-import Button from '@mui/material/Button';
 
 import { Link } from 'react-router-dom';
-
 import { useDispatch, useSelector } from 'react-redux';
 
-import { theme } from '../../commons/theme';
-
-import { startLogOut } from '../../store/auth';
-import { allFirstLetterUpper, getFirstLetterUper } from '../../commons/utils';
-import { closeDrawerAction } from '../../store/globals';
 
 
 // CUSTOM
+import { theme } from '../../commons/theme';
 import simpleMenu from '../../data/menu-sidebar.json';
-import menuWithChildrens from '../../data/menu-submenu-sidebar.json';
+import { closeDrawerAction } from '../../store/globals';
 import { IconByString } from '../../components/IconByString';
-import { text } from 'stream/consumers';
-import { Key } from '@mui/icons-material';
+import menuWithChildrens from '../../data/menu-submenu-sidebar.json';
+import { LogoPlatform } from '../../components/LogoPlatform';
+
 
 
 const drawerWidth = 240;
@@ -156,29 +140,16 @@ export const MenuSidebar = () => {
 
   return (
       <Drawer variant="permanent" open={open}>
-        <DrawerHeader>
-        
-         
-          {/* <Box
-            component="img"
-            sx={{
-              justifyContent: 'start',
-              height: 150,
-              width: 70,
-              padding: 1,
-              maxHeight: { xs: 150, md: 70 },
-              maxWidth: { xs: 150, md: 70 },
-            }}
-            alt="The house from the offer."
-            src="//www.gstatic.com/mobilesdk/160323_mobilesdk/images/firebase_logotype_white_18dp.svg"
-          /> */}
-          <Typography  component="h2">
-            Firebase
-          </Typography>
+        <DrawerHeader sx={{ justifyContent: 'space-between' }}>
+          <LogoPlatform />
+            
+            <Typography  component="h2">
+              Firebase
+            </Typography>
 
-          <IconButton sx={{ color: '#FFFF' }} onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-          </IconButton>
+            <IconButton sx={{ color: '#FFFF' }} onClick={handleDrawerClose}>
+              {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+            </IconButton>
         </DrawerHeader>
         <Divider />
         <List>

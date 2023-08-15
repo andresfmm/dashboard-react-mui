@@ -1,7 +1,9 @@
 {
-  "name": "dashboard-react-mui",
-  "version": "1.0.0",
+  "name": "spa-admin",
+  "version": "0.1.0",
   "private": true,
+  "author": "Andres f meza",
+  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -56,28 +58,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andresfmm/dashboard-react-mui"
-  },
-  "keywords": [
-    "mui admin",
-    "dashboard mui react js",
-    "reac dashboard",
-    "single checkbox",
-    "reac js admin mui",
-    "dashboard free react",
-    "dashboard free react mui"
-  ],
-  "author": "Andres f meza",
-  "license": "MIT",
-  "contact": "andres230687@hotmail.com",
-  "bugs": {
-    "url": "https://github.com/andresfmm/dashboard-react-mui/issues"
-  },
-  "homepage": "https://github.com/andresfmm/dashboard-react-mui#readme",
-  "dependencies": {
-    "react": "^18.2.0"
   }
+  
+  
 }

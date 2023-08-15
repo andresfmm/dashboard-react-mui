@@ -37,30 +37,6 @@ export const getUrlImages = () => {
 }
 
 
-export const getUrlAvatarPlataforma = () => {
-    return enviroments.URL_BASE_IMAGES+'/spa-plataforma';
-}
-
-export const getUrlImageHotel = () => {
-    return enviroments.URL_BASE_IMAGES+'/spa-image';
-}
-
-export const getUrlAvatarSpa = () => {
-    return enviroments.URL_BASE_IMAGES+'/spa-avatar';
-}
-
-export const getUrlEnviroments = () => {
-    return enviroments.URL_BASE_IMAGES+'/enviroment';
-}
-
-export const getUrlAudio = () => {
-    return enviroments.URL_BASE_IMAGES+'/image-audio';
-}
-
-export const getUrlSrcAudio = () => {
-    return enviroments.URL_BASE_IMAGES+'/src-audio';
-}
-
 
 export const createArrayErrorsValidtions = ( list = [] ):any => {
 

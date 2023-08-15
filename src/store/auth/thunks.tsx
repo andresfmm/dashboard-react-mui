@@ -2,17 +2,13 @@
 // NATIVE 
 
 // INSTALLED 
-import { Dispatch } from 'redux';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // CUSTOM 
-import { hasErrorRequest } from '../errors';
-import { types } from '../../commons/types/types';
-import { loginWithEmailPassword } from '../../services';
 import { logout, login } from './';
+import { types } from '../../commons/types/types';
 import { checkingPreload, unCheckingPreload } from '../loading';
-import { ILoginWithEmailPassword, IStorageAudios } from '../../commons/interfaces';
-import { IStorageEnviroments } from '../../commons/interfaces/enviroments.interface';
+import { ILoginWithEmailPassword } from '../../commons/interfaces';
 
 
 
@@ -100,8 +96,6 @@ export const startLogOut = (): any => {
 
             dispatch( checkingPreload() );
                 await AsyncStorage.removeItem(types.storage.userStorage);
-                await AsyncStorage.removeItem(types.storage.spaStorage);
-                await AsyncStorage.removeItem(types.storage.enviromentsStorage);
                 dispatch( logout() );
             dispatch( unCheckingPreload() );
     
